@@ -4,8 +4,8 @@ import * as Marketplaces from '../lib/Marketplaces';
 import whitelistAddresses from './whitelist.json';
 
 const CollectionConfig: CollectionConfigInterface = {
-  testnet: Networks.ethereumTestnet,
-  mainnet: Networks.ethereumMainnet,
+  testnet: Networks.polygonTestnet,
+  mainnet: Networks.polygonMainnet,
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
@@ -15,18 +15,18 @@ const CollectionConfig: CollectionConfigInterface = {
   hiddenMetadataUri: 'ipfs://QmSMYBC8GzbZodoSxoLjwtCGciArToKT8C3rxiu2pGQzMf/hidden.json',
   maxSupply: 5000,
   whitelistSale: {
-    price: 0.0001,
+    price: 3,
     maxMintAmountPerTx: 1,
   },
   preSale: {
-    price: 0.0002,
+    price: 3,
     maxMintAmountPerTx: 2,
   },
   publicSale: {
-    price: 0.0003,
+    price: 3,
     maxMintAmountPerTx: 5,
   },
-  contractAddress: "0xF119cF0f9F791A22682714dFbf7620436bd1b96A",
+  contractAddress: "0x9756345da9157c3EE044C6695895b28E0C81CBe2",
   marketplaceIdentifier: 'my-nft-token',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
